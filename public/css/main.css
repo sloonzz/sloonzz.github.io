@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #707070; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  height: 400px;
+  background-color: rgba(223, 212, 212, 0.6);
+  display: flex;
+  align-items: center; }
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+header::after {
+  height: 400px;
+  content: "";
+  background-image: url("/img/StockSnap_MRF1628S9A.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top left;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+@media only screen and (max-width: 1100px) {
+  header {
+    justify-content: center;
+    height: 350px; }
+  header::after {
+    height: 350px; }
+  .header-container {
+    color: #707070; }
+  .header-introduction {
+    color: #564d85;
+    margin: 10px 16px;
+    text-align: center; }
+    .header-introduction h1 {
+      font-size: 45px;
+      font-weight: bold; }
+    .header-introduction h2 {
+      font-weight: normal; }
+  .header-links {
+    text-align: center;
+    margin-top: 6px; }
+    .header-links a :hover {
+      transition-property: all;
+      transition-duration: 0.2s;
+      fill: #564d85; }
+    .header-links svg {
+      transition-property: all;
+      transition-duration: 0.2s;
+      height: 50px;
+      width: 50px;
+      fill: #707070; }
+  .section-container {
+    text-align: center;
+    color: #dfd4d4; }
+  .section-header {
+    width: 300px;
+    background-color: #564d85;
+    border-radius: 10px; } }
+
+@media only screen and (min-width: 1100px) {
+  .header-container {
+    left: 180px;
+    right: 180px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #707070;
+    justify-content: space-between; }
+  .header-introduction {
+    color: #564d85; }
+    .header-introduction h1 {
+      font-size: 45px;
+      font-weight: bold; }
+    .header-introduction h2 {
+      font-weight: normal; }
+  .header-links a {
+    margin: 0px 6px; }
+    .header-links a :hover {
+      transition-property: all;
+      transition-duration: 0.2s;
+      fill: #564d85; }
+  .header-links svg {
+    transition-property: all;
+    transition-duration: 0.2s;
+    height: 50px;
+    width: 50px;
+    fill: #707070; } }

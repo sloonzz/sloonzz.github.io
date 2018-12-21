@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A simple portfolio website using HTML5, CSS3, JS, and SASS.",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "node-sass -w resources/scss/ -o public/css/ --recursive --usePolling"
+  },
+  "author": "Ken Segovia",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

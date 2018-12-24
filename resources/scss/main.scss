@@ -1,7 +1,9 @@
 $grey: #dfd4d4;
+$white: #f2f2f2;
 $dark-grey: #707070;
 $purple: #564d85;
 $first-query: 1100px;
+$second-query: 900px;
 
 * {
   box-sizing: border-box;
@@ -29,12 +31,50 @@ header {
   background-color: rgba($grey, 0.6);
   display: flex;
   align-items: center;
+  h1 {
+    color: $purple;
+  }
+  h2 {
+    color: $white;
+  }
 }
 
 section {
   display: flex;
+  margin: 0px 100px;
   justify-content: center;
   margin-top: 20px;
+}
+
+.section-container {
+  text-align: center;
+  color: $grey;
+}
+
+.section-header {
+  margin: auto;
+  height: 50px;
+  background-color: $purple;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  background-color: red;
+  margin-top: 20px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.section-content-item {
+  background-color: black;
+  flex: 1 1 30%;
+  margin: 6px;
+  padding: 6px;
 }
 
 header::after {
@@ -103,13 +143,24 @@ header::after {
 
   .section-container {
     text-align: center;
-    color: $grey;
   }
 
-  .section-header {
-    width: 300px;
-    background-color: $purple;
-    border-radius: 10px;
+  .section-content {
+    ul {
+      // flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: $second-query) {
+  .section-content {
+    ul {
+      flex-direction: column;
+    }
+  }
+
+  .section-content-item {
+    width: auto;
   }
 }
 
@@ -126,7 +177,6 @@ header::after {
   }
 
   .header-introduction {
-    color: $purple;
     h1 {
       font-size: 45px;
       font-weight: bold;

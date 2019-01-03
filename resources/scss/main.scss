@@ -2,7 +2,7 @@ $grey: #dfd4d4;
 $white: #f2f2f2;
 $dark-grey: #707070;
 $purple: #564d85;
-$first-query: 1100px;
+$first-query: 1230px;
 $second-query: 900px;
 
 * {
@@ -31,12 +31,47 @@ header {
   background-color: rgba($grey, 0.6);
   display: flex;
   align-items: center;
+
+  .header-introduction {
+    display: flex;
+    .header-image {
+      img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .header-text {
+      margin-left: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
   h1 {
     color: $purple;
   }
   h2 {
     color: $white;
   }
+}
+
+header::after {
+  height: 400px;
+  content: "";
+  background-image: url("/img/StockSnap_MRF1628S9A.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top left;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 section {
@@ -77,24 +112,6 @@ section {
   padding: 6px;
 }
 
-header::after {
-  height: 400px;
-  content: "";
-  background-image: url("/img/StockSnap_MRF1628S9A.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: top left;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 footer {
   background-color: darken($color: $dark-grey, $amount: 35);
   margin-top: 20px;
@@ -122,11 +139,11 @@ footer {
 @media only screen and (max-width: $first-query) {
   header {
     justify-content: center;
-    height: 350px;
+    height: 500px;
   }
 
   header::after {
-    height: 350px;
+    height: 500px;
   }
 
   .header-container {
@@ -178,6 +195,14 @@ footer {
 
 // Tablets
 @media only screen and (max-width: $second-query) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    .header-introduction {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .section-content {
     ul {
       flex-direction: column;

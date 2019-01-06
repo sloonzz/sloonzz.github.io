@@ -1,4 +1,4 @@
-import data from "/js/data.js";
+import data from "/public/js/data.js";
 
 const rowItemLimit = 3;
 

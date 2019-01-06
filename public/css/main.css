@@ -79,7 +79,7 @@ header {
 header::after {
   height: 400px;
   content: "";
-  background-image: url("/img/StockSnap_MRF1628S9A.jpg");
+  background-image: url("../img/StockSnap_MRF1628S9A.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

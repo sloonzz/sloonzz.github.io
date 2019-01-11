@@ -4,11 +4,33 @@
   "description": "A simple portfolio website using HTML5, CSS3, JS, and SASS.",
   "main": "index.js",
   "scripts": {
-    "sass-watch": "node-sass -w resources/scss/ -o public/css/ --recursive --usePolling"
+    "sass-watch": "node-sass -w resources/scss/ -o public/css/ --recursive --usePolling",
+    "watch": "webpack --progress --color --watch --display-error-details",
+    "build-dev": "webpack",
+    "build-production": "cross-env NODE_ENV=production webpack"
   },
   "author": "Ken Segovia",
   "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "babel-loader": "^8.0.5",
     "node-sass": "^4.11.0"
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloonzz/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sloonzz/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/sloonzz/portfolio-website#readme"
 }

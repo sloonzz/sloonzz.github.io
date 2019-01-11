@@ -1,0 +1,32 @@
+footer {
+  background-color: darken($color: $dark-grey, $amount: 35);
+  margin-top: 20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  color: $white;
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .footer-skills {
+      // background-color: red;
+    }
+    .footer-description {
+      // background-color: blue;
+    }
+    .footer-contacts {
+      // background-color: green;
+    }
+  }
+}
+
+// Tablets
+@media only screen and (max-width: $first-query) {
+  footer {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+}

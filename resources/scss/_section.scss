@@ -37,7 +37,7 @@ section {
 }
 
 // Tablets
-@media only screen and (max-width: $first-query) {
+@media only screen and (max-width: $desktop-min) {
   .section-container {
     text-align: center;
     margin: 0px 60px;
@@ -45,7 +45,7 @@ section {
 }
 
 // Phones
-@media only screen and (max-width: $second-query) {
+@media only screen and (max-width: $phone-max) {
   .section-container {
     margin: 0px 30px;
   }

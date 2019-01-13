@@ -227,87 +227,89 @@ footer {
 
 @keyframes slide-from-left {
   from {
-    -ms-transform: translate(-150px, 0);
-    /* IE 9 */
     -webkit-transform: translate(-150px, 0);
-    /* Safari */
+    -ms-transform: translate(-150px, 0);
     -moz-transform: translate(-150px, 0);
-    /* Safari */
-    transform: translate(-150px, 0);
-    /* Standard syntax */ }
+    -o-transform: translate(-150px, 0);
+    transform: translate(-150px, 0); }
   to {
-    -ms-transform: translate(0, 0);
-    /* IE 9 */
     -webkit-transform: translate(0, 0);
-    /* Safari */
-    transform: translate(0, 0);
-    /* Standard syntax */ } }
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); } }
 
 @keyframes slide-from-right {
   from {
-    -ms-transform: translate(150px, 0);
-    /* IE 9 */
     -webkit-transform: translate(150px, 0);
-    /* Safari */
+    -ms-transform: translate(150px, 0);
     -moz-transform: translate(150px, 0);
-    /* Safari */
-    transform: translate(150px, 0);
-    /* Standard syntax */ }
+    -o-transform: translate(150px, 0);
+    transform: translate(150px, 0); }
   to {
-    -ms-transform: translate(0, 0);
-    /* IE 9 */
     -webkit-transform: translate(0, 0);
-    /* Safari */
-    transform: translate(0, 0);
-    /* Standard syntax */ } }
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); } }
 
 @keyframes slide-from-top {
   from {
-    -ms-transform: translate(0, -150px);
     -webkit-transform: translate(0, -150px);
+    -ms-transform: translate(0, -150px);
     -moz-transform: translate(0, -150px);
+    -o-transform: translate(0, -150px);
     transform: translate(0, -150px); }
   to {
-    -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
 @keyframes slide-from-bottom {
   from {
-    -ms-transform: translate(0, 150px);
     -webkit-transform: translate(0, 150px);
+    -ms-transform: translate(0, 150px);
     -moz-transform: translate(0, 150px);
+    -o-transform: translate(0, 150px);
     transform: translate(0, 150px); }
   to {
-    -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
 .fade-in {
-  animation-name: fade-in;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out; }
+  animation: fade-in 3s forwards ease-out;
+  -webkit-animation: fade-in 3s forwards ease-out;
+  -moz-animation: fade-in 3s forwards ease-out;
+  -o-animation: fade-in 3s forwards ease-out; }
 
 .slide-from-left {
-  animation-name: slide-from-left;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation: slide-from-left 2s forwards;
+  -webkit-animation: slide-from-left 2s forwards;
+  -moz-animation: slide-from-left 2s forwards;
+  -o-animation: slide-from-left 2s forwards; }
 
 .slide-from-right {
-  animation-name: slide-from-right;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation: slide-from-right 2s forwards;
+  -webkit-animation: slide-from-right 2s forwards;
+  -moz-animation: slide-from-right 2s forwards;
+  -o-animation: slide-from-right 2s forwards; }
 
 .slide-from-bottom {
-  animation-name: slide-from-bottom;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation: slide-from-bottom 2s forwards;
+  -webkit-animation: slide-from-bottom 2s forwards;
+  -moz-animation: slide-from-bottom 2s forwards;
+  -o-animation: slide-from-bottom 2s forwards; }
 
 .slide-from-top {
-  animation-name: slide-from-top;
-  animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation: slide-from-top 2s forwards;
+  -webkit-animation: slide-from-top 2s forwards;
+  -moz-animation: slide-from-top 2s forwards;
+  -o-animation: slide-from-top 2s forwards; }
 
 header,
 header::after {

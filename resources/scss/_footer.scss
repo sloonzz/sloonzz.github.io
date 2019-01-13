@@ -23,7 +23,7 @@ footer {
 }
 
 // Tablets
-@media only screen and (max-width: $first-query) {
+@media only screen and (max-width: $desktop-min) {
   footer {
     .footer-container {
       flex-direction: column;

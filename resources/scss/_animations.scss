@@ -1,6 +1,5 @@
 .hide {
   visibility: hidden;
-
 }
 
 .focused {
@@ -31,111 +30,55 @@
   $distance-from-left: -150px;
   $distance-from-top: 0;
   from {
-    -ms-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* IE 9 */
-    -webkit-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* Safari */
-    -moz-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* Safari */
-    transform: translate($distance-from-left, $distance-from-top);
-    /* Standard syntax */
+    @include transform(translate($distance-from-left, $distance-from-top));
   }
   to {
-    -ms-transform: translate(0, 0); /* IE 9 */
-    -webkit-transform: translate(0, 0); /* Safari */
-    transform: translate(0, 0);
-    /* Standard syntax */
+    @include transform(translate(0, 0));
   }
 }
 @keyframes slide-from-right {
   $distance-from-left: 150px;
   $distance-from-top: 0;
   from {
-    -ms-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* IE 9 */
-    -webkit-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* Safari */
-    -moz-transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* Safari */
-    transform: translate(
-      $distance-from-left,
-      $distance-from-top
-    ); /* Standard syntax */
+    @include transform(translate($distance-from-left, $distance-from-top));
   }
   to {
-    -ms-transform: translate(0, 0); /* IE 9 */
-    -webkit-transform: translate(0, 0);
-    /* Safari */
-    transform: translate(0, 0);
-    /* Standard syntax */
+    @include transform(translate(0, 0));
   }
 }
 @keyframes slide-from-top {
   $distance-from-left: 0;
   $distance-from-top: -150px;
   from {
-    -ms-transform: translate($distance-from-left, $distance-from-top);
-    -webkit-transform: translate($distance-from-left, $distance-from-top);
-    -moz-transform: translate($distance-from-left, $distance-from-top);
-    transform: translate($distance-from-left, $distance-from-top);
+    @include transform(translate($distance-from-left, $distance-from-top));
   }
   to {
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    @include transform(translate(0, 0));
   }
 }
 @keyframes slide-from-bottom {
   $distance-from-left: 0;
   $distance-from-top: 150px;
   from {
-    -ms-transform: translate($distance-from-left, $distance-from-top);
-    -webkit-transform: translate($distance-from-left, $distance-from-top);
-    -moz-transform: translate($distance-from-left, $distance-from-top);
-    transform: translate($distance-from-left, $distance-from-top);
+    @include transform(translate($distance-from-left, $distance-from-top));
   }
   to {
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    @include transform(translate(0, 0));
   }
 }
 .fade-in {
-  animation-name: fade-in;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  @include animation(fade-in 3s forwards ease-out);
 }
 .slide-from-left {
-  animation-name: slide-from-left;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  @include animation(slide-from-left 2s forwards);
 }
 .slide-from-right {
-  animation-name: slide-from-right;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  @include animation(slide-from-right 2s forwards);
 }
 .slide-from-bottom {
-  animation-name: slide-from-bottom;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  @include animation(slide-from-bottom 2s forwards);
 }
 .slide-from-top {
-  animation-name: slide-from-top;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  @include animation(slide-from-top 2s forwards);
 }
 

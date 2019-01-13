@@ -6,25 +6,25 @@
   "scripts": {
     "sass-watch": "node-sass -w resources/scss/ -o public/css/ --recursive --usePolling",
     "watch": "webpack --progress --color --watch --display-error-details",
-    "build-dev": "webpack",
-    "build-production": "cross-env NODE_ENV=production webpack",
-    "build-prod": "npm run build-production"
+    "dev": "webpack",
+    "prod": "cross-env NODE_ENV=production webpack"
   },
   "author": "Ken Segovia",
   "license": "MIT",
-  "dependencies": {
-    "@babel/polyfill": "^7.2.5",
-    "babel-loader": "^8.0.5",
-    "node-sass": "^4.11.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   },
   "repository": {
     "type": "git",

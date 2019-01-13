@@ -2,3 +2,17 @@
   Animations
 */
 
+@mixin animation($property) {
+  animation: $property;
+  -webkit-animation: $property;
+  -moz-animation: $property;
+  -o-animation: $property;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}

@@ -9,7 +9,7 @@ $work-in-progress: true;
   }
   header {
     // Phones
-    @media only screen and (max-width: $second-query) {
+    @media only screen and (max-width: $phone-max) {
       .header-svg {
         margin-top: 10px;
         margin-bottom: 10px;

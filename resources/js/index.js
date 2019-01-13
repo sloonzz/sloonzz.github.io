@@ -1,4 +1,5 @@
 import data from "./data.js";
+import './animation-focus.js';
 
 const rowItemLimit = 3;
 

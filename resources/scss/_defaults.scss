@@ -11,6 +11,14 @@ body {
   background-color: $dark-grey;
 }
 
+.hide-overflow-x {
+  overflow-x: hidden;
+}
+
+.hide-overflow-y {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
 }

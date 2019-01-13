@@ -12,6 +12,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #707070; }
 
+.hide-overflow-x {
+  overflow-x: hidden; }
+
+.hide-overflow-y {
+  overflow-y: hidden; }
+
 a {
   text-decoration: none; }
 
@@ -310,6 +316,9 @@ footer {
   -webkit-animation: slide-from-top 2s forwards;
   -moz-animation: slide-from-top 2s forwards;
   -o-animation: slide-from-top 2s forwards; }
+
+.hide-overflow {
+  overflow: hidden; }
 
 header,
 header::after {

@@ -1,6 +1,9 @@
 $work-in-progress: true;
 
 @if $work-in-progress == true {
+  .hide-overflow {
+    overflow: hidden;
+  }
   header,
   header::after {
     position: absolute;
